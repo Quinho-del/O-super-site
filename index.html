@@ -1,60 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Educação Online</title>
-  <!-- Importando a fonte DM Sans -->
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUTEC</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>Educatec</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Cursos</a></li>
-        <li><a href="#">Artigos</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!--Logo-->
+    <header>
+        <div class="logo">
+            <img src="assets/css/img/Identidade Visual - super site .png" alt="Logo EDUTEC">
+            <h1>EDUTEC</h1>
+        </div>
+        <!--O nav é para separar links-->
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section>
-      <h2>Bem-vindo ao portal EDUCATEC</h2>
-      <p>Aqui você encontra conteúdos para aprender de forma prática e acessível.</p>
-    </section>
 
-    <section>
-      <h2>Cursos em destaque</h2>
-      <article>
-        <h3>Curso de Matemática</h3>
-        <p>Aprenda do básico ao avançado com exemplos práticos.</p>
-      </article>
-      <article>
-        <h3>Curso de Português</h3>
-        <p>Melhore sua escrita e leitura com exercícios interativos.</p>
-      </article>
-    </section>
+    <main>
+        <!--inicio do site-->
+        <section id="inicio" class="intro">
+            <h2>Bem-vindo ao portal EDUTEC</h2>
+            <p>Aqui você encontra conteúdos para aprender de forma prática, acessível e interativa.</p>
+        </section>
 
-    <aside>
-      <h2>Dicas Rápidas</h2>
-      <ul>
-        <li>Reserve 1h por dia para estudar</li>
-        <li>Faça resumos para fixar melhor</li>
-        <li>Pratique com exercícios</li>
-      </ul>
-    </aside>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Educação Online - Todos os direitos reservados.</p>
-  </footer>
+        <!--cursos-->
+        <section id="cursos" class="cards">
+            <h2>Cursos em destaque</h2>
+            <div class="card-container">
+                <div class="card">
+                    <a href="matematica.html">
+                        <img src="https://profuturo.education/wp-content/uploads/2022/03/Captura-de-pantalla-2022-03-11-a-las-10.51.35.png"
+                            alt="Curso de Matemática">
+                        <h3>Curso de Matemática</h3>
+                        <p>Aprenda do básico ao avançado com exemplos práticos.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="portugues.html">
+                        <img src="https://www.bradescoseguros.com.br/wcm/connect/e1a70f0b-7b7b-4106-9d2e-3688aab1fa9a/materia1desk_1400x650.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE-e1a70f0b-7b7b-4106-9d2e-3688aab1fa9a-nAZOf31"
+                            alt="Curso de Português">
+                        <h3>Curso de Português</h3>
+                        <p>Melhore sua escrita e leitura com exercícios interativos.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="tecnologia.html">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+                            alt="Curso de Tecnologia">
+                        <h3>Curso de Tecnologia</h3>
+                        <p>Introdução à programação e ferramentas digitais.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!--sobre o site-->
+        <section id="sobre" class="sobre">
+            <h2>Sobre a EDUTEC</h2>
+            <p>
+                O EDUTEC é uma plataforma de educação online desenvolvida para oferecer conteúdos
+                de qualidade em diversas áreas do conhecimento. Nosso objetivo é democratizar o
+                aprendizado, utilizando a tecnologia como aliada da educação.
+            </p>
+        </section>
+
+        <!--formulario-->
+        <section id="contato" class="formulario">
+            <h2>Entre em contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!--Rodapé do site-->
+    <footer>
+        <p>&copy; 2025 EDUTEC - Todos os direitos reservados.</p>
+        <p>Contato: contato@edutec.com | Tel: (11) 1234-5678</p>
+        <div class="social">
+            <a href="https://share.google/5mq9B9TcCTaxGOxDO">Facebook</a> |
+            <a href="https://share.google/vcr2kaCA7CPNKnxzC">Instagram</a> |
+            <a href="https://share.google/r76e4koXUv7Hr0rNr">LinkedIn</a>
+        </div>
+    </footer>
 
 </body>
+
 </html>
-
-
