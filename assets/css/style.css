@@ -1,37 +1,51 @@
-body {
-    font-family: 'DM Sans', sans-serif;
-    margin: 0;
-    background-color: #f4f4f9;
-    color: #333;
+/* Variáveis globais */
+:root {
+    --font-principal: 'DM Sans', sans-serif;
+    --cor-fundo: #f4f4f9;
+    --cor-texto: #333;
+    --cor-primaria: #2a72d4;
+    --cor-primaria-hover: #1f5cb8;
+    --cor-clara: #ffffff;
+    --cor-card: #eef3fb;
+    --sombra-card: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    --raio-borda: 8px;
 }
 
-/*parte de cima do site*/
+/* Estilos globais */
+body {
+    font-family: var(--font-principal);
+    margin: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+/* Parte de cima do site */
 header {
-    background: #2a72d4;
-    color: white;
+    background: var(--cor-primaria);
+    color: var(--cor-clara);
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*controla o comportamento de "quebra de linha" dos itens dentro de um contêiner flexível no layout do Flexbox*/
     flex-wrap: wrap;
 }
-/*logo*/
+
+/* Logo */
 .logo {
     display: flex;
     align-items: center;
-    /*define os espaços entre os elementos*/
     gap: 10px;
-    border-style: solid;
-    border-color: #ffffff;
+    border: 1px solid var(--cor-clara);
     border-radius: 16px;
 }
 
 .logo img {
-    width: 200px; font-weight: 200;
-    border-radius: 15px;;
+    width: 200px;
+    font-weight: 200;
+    border-radius: 15px;
 }
-/*para o menu de navegação*/
+
+/* Navegação */
 nav ul {
     list-style: none;
     display: flex;
@@ -39,9 +53,9 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-/*vai definir a aparência dos links (<a>) dentro de um elemento <nav>*/
+
 nav a {
-    color: white;
+    color: var(--cor-clara);
     text-decoration: none;
     font-weight: 500;
 }
@@ -60,9 +74,9 @@ main {
 .intro,
 .sobre,
 .formulario {
-    background: white;
+    background: var(--cor-clara);
     padding: 20px;
-    border-radius: 8px;
+    border-radius: var(--raio-borda);
     margin-bottom: 20px;
 }
 
@@ -74,13 +88,12 @@ main {
 }
 
 .card {
-    background: #eef3fb;
-    border-radius: 8px;
+    background: var(--cor-card);
+    border-radius: var(--raio-borda);
     padding: 15px;
     flex: 1 1 calc(33% - 20px);
     text-align: center;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    
+    box-shadow: var(--sombra-card);
 }
 
 .card img {
@@ -90,8 +103,6 @@ main {
     border-radius: 6px;
     margin-bottom: 10px;
 }
-
-
 
 /* Formulário */
 form {
@@ -109,8 +120,9 @@ textarea {
 }
 
 button {
-    background: #2a72d4;
-    color: white;
+    
+    background: var(--cor-primaria);
+    color: var(--cor-clara);
     border: none;
     padding: 10px;
     border-radius: 6px;
@@ -119,21 +131,20 @@ button {
 }
 
 button:hover {
-    background: #1f5cb8;
+    background: var(--cor-primaria-hover);
 }
 
 /* Rodapé */
 footer {
-    background: #2a72d4;
-    color: white;
+    background: var(--cor-primaria);
+    color: var(--cor-clara);
     text-align: center;
     padding: 15px;
     margin-top: 20px;
 }
 
 .social a {
-
-    color: white;
+    color: var(--cor-clara);
     text-decoration: none;
     margin: 0 5px;
 }
@@ -142,7 +153,7 @@ footer .social a:hover {
     text-decoration: underline;
 }
 
-/*formatação do site*/
+/* Responsividade */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -152,8 +163,4 @@ footer .social a:hover {
     .cards .card-container {
         flex-direction: column;
     }
-}
-
-.edu img{
-    width: 80px;
 }
