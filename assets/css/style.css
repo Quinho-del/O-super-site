@@ -153,3 +153,7 @@ footer .social a:hover {
         flex-direction: column;
     }
 }
+
+.edu img{
+    width: 80px;
+}
