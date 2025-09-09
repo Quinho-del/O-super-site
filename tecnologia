@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de Tecnologia - EDUTEC</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" alt="Logo EDUTEC">
+      <h1>EDUTEC</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="matematica.html">Matemática</a></li>
+        <li><a href="portugues.html">Português</a></li>
+        <li><a href="tecnologia.html">Tecnologia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Curso de Tecnologia</h2>
+      <p>Aprenda programação e ferramentas digitais para o futuro do trabalho.</p>
+    </section>
+
+    <section class="conteudo">
+      <h3>Módulos do curso:</h3>
+      <ul>
+        <li>Introdução à Lógica de Programação</li>
+        <li>HTML, CSS e JavaScript</li>
+        <li>Ferramentas de produtividade</li>
+        <li>Noções de Inteligência Artificial</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EDUTEC - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
